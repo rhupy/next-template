@@ -2,13 +2,20 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
+import { createSpec } from "@/app/createSpec/createSpec"
 
 export default function IndexPage() {
+  const c = createSpec()
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+      <div
+      // className="flex items-center justify-center w-full h-[300px] bg-accent-foreground rounded-lg"
+      >
+        {c}
+      </div>
       <div className="flex max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Beautifully designed components <br className="hidden sm:inline" />
+          Beautifully designed components! <br className="hidden sm:inline" />
           built with Radix UI and Tailwind CSS.
         </h1>
         <p className="max-w-[700px] text-lg text-muted-foreground">
