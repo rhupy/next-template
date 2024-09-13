@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  experimental: {
-    appDir: true,
-  },
+  // experimental: {
+  //   appDir: true,
+  // },
   webpack: (config, { dev, isServer }) => {
     if (dev && !isServer) {
       config.watchOptions = {

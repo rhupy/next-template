@@ -104,7 +104,7 @@ const getGPUInfo = (): string => {
 
   // NVIDIA GeForce RTX 4070 SUPER 추출을 위한 정규 표현식
   const match = renderer.match(/NVIDIA GeForce RTX 4070 SUPER/i)
-  return match ? match[0] : "Other GPU"
+  return match ? match[0] : "Internal GPU"
 }
 
 const getOSInfo = (): string => {
@@ -193,7 +193,7 @@ export const CreateSpec = () => {
 
   return (
     <div className="container mx-auto h-full p-4">
-      <h1 className="mb-4 text-2xl font-bold">Your PC Spec</h1>
+      <h1 className="mb-4 text-2xl font-bold">K - PC 스팩 시트 생성기</h1>
       <div className="mb-8">
         <Table>
           <TableHeader>
